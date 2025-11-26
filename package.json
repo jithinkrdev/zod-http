@@ -1,6 +1,6 @@
 {
   "name": "zod-http",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "The Ultimate Type-Safe Fetch Wrapper for Zod",
   "main": "./dist/src/index.js",
   "module": "./dist/src/index.mjs",
