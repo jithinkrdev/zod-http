@@ -64,7 +64,7 @@ async function generateOperation(
     spec: OpenAPIV3.Document,
     operationId: string
 ): Promise<string> {
-    const imports = new Set<string>(['import { zFetch } from "zod-fetch"', 'import { z } from "zod"']);
+    const imports = new Set<string>(['import { zFetch } from "zod-http"', 'import { z } from "zod"']);
 
     // Helper to resolve refs (simplified)
     const resolve = (ref: string) => {

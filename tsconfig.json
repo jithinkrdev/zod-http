@@ -14,7 +14,7 @@
       "@/*": [
         "./src/*"
       ],
-      "zod-fetch": [
+      "zod-http": [
         "./src/index.ts"
       ]
     }

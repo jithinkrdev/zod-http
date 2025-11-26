@@ -9,7 +9,7 @@ export default defineConfig({
     resolve: {
         alias: {
             "@": "/src",
-            "zod-fetch": "/src/index.ts",
+            "zod-http": "/src/index.ts",
         },
     },
 });

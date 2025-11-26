@@ -1,5 +1,5 @@
 
-import { zFetch } from "zod-fetch"
+import { zFetch } from "zod-http"
 import { z } from "zod"
 
 const RequestSchema = z.object({ "title": z.string(), "content": z.string().optional() });

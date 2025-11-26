@@ -1,5 +1,5 @@
 
-import { zFetch } from "zod-fetch"
+import { zFetch } from "zod-http"
 import { z } from "zod"
 
 

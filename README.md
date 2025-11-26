@@ -1,8 +1,8 @@
-# zod-fetch
+# zod-http
 
 **The Ultimate Type-Safe Fetch Wrapper for Zod**
 
-`zod-fetch` is a lightweight (< 5kB), zero-dependency (except Zod) wrapper for `fetch` that brings complete type safety and validation to your API calls. It eliminates boilerplate and provides robust error handling.
+`zod-http` is a lightweight (< 5kB), zero-dependency (except Zod) wrapper for `fetch` that brings complete type safety and validation to your API calls. It eliminates boilerplate and provides robust error handling.
 
 ## Features
 
@@ -16,11 +16,11 @@
 ## Installation
 
 ```bash
-npm install zod-fetch zod
+npm install zod-http zod
 # or
-yarn add zod-fetch zod
+yarn add zod-http zod
 # or
-pnpm add zod-fetch zod
+pnpm add zod-http zod
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ pnpm add zod-fetch zod
 ### Basic Usage
 
 ```typescript
-import { zFetch, ZodFetchError } from "zod-fetch";
+import { zFetch, ZodFetchError } from "zod-http";
 import { z } from "zod";
 
 const UserSchema = z.object({
@@ -59,7 +59,7 @@ try {
 ### Reusable Client
 
 ```typescript
-import { createZodFetchClient } from "zod-fetch";
+import { createZodFetchClient } from "zod-http";
 
 const api = createZodFetchClient({
   baseURL: "https://api.example.com",
@@ -77,17 +77,17 @@ Generate a fully typed client from your OpenAPI spec.
 
 ```bash
 # Generate from local file
-npx zod-fetch generate ./openapi.yaml --output src/api
+npx zod-http generate ./openapi.yaml --output src/api
 
 # Generate from URL
-npx zod-fetch generate https://api.example.com/openapi.json --output src/api
+npx zod-http generate https://api.example.com/openapi.json --output src/api
 ```
 
 **Generated Code Example:**
 
 ```typescript
 // src/api/getUserById.ts
-import { zFetch } from "zod-fetch";
+import { zFetch } from "zod-http";
 import { z } from "zod";
 
 export const ResponseSchema = z.object({ ... });

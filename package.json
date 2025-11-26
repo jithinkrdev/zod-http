@@ -1,12 +1,12 @@
 {
-  "name": "zod-fetch",
-  "version": "0.1.0",
+  "name": "zod-http",
+  "version": "0.1.2",
   "description": "The Ultimate Type-Safe Fetch Wrapper for Zod",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
+  "types": "./dist/src/index.d.ts",
   "bin": {
-    "zod-fetch": "./dist/cli/index.js"
+    "zod-http": "./dist/cli/index.js"
   },
   "files": [
     "dist"

@@ -5,8 +5,8 @@ import { generate } from "./generator";
 const program = new Command();
 
 program
-    .name("zod-fetch")
-    .description("CLI for zod-fetch")
+    .name("zod-http")
+    .description("CLI for zod-http")
     .version("0.1.0");
 
 program
